@@ -22,7 +22,7 @@ cd $dir
 
 npmStart=$(cat package.json | grep -E 'start')
 
-if [ -z $npmStart ]; then
+if [ -z "$npmStart" ]; then
 echo "no start script"
 exit 1
 fi
@@ -44,7 +44,7 @@ cd $dir
 
 npmStop=$(cat package.json | grep -E 'stop')
 
-if [ -z $npmStop ]; then
+if [ -z "$npmStop" ]; then
 echo "no stop script"
 exit 1
 fi
