@@ -16,7 +16,7 @@ mkdir $dir
 echo "made the directory"
 fi
 
-if [ -z "$(ls -a $dir)" ]; then
+if [ -z "$(ls -A $dir)" ]; then
    echo "empty directory"
 else
    echo "directory is not empty"
