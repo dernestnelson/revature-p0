@@ -64,7 +64,7 @@ fi
     $dir/LICENSE.txt \
     $dir/README.md
 
-
+cd $dir
 # enforce node as project runtime
 # creates a package.json
 npm init -y
@@ -74,7 +74,7 @@ user=$2
 userEmail=$3
 
 git init
-git config $user
-git config $userEmail
+git config user.name $user
+git config user.email $userEmail
 
 exit 0
